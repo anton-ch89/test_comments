@@ -1,0 +1,125 @@
+
+body
+    font-family: Roboto, sans-serif
+
+.main
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__header
+        font-size: 18px
+        font-weight: 700
+        margin: 40px 0 15px 0
+    &__text
+        width: 90%
+
+.comments-field
+    display: flex
+    justify-content: center
+
+.container
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-direction: column
+    width: 70%
+
+.comments
+    width: 60%
+    @media (max-width: 1400px)
+        width: 80%
+    @media (max-width: 1200px)
+        width: 90%
+    @media (max-width: 992px)
+        width: 100%
+
+    &__header
+        font-size: 18px
+        font-style: italic
+        margin: 30px 0 15px 0
+
+.form
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: end
+    margin: 10px 0 40px 0
+    border: 1px solid #ccc
+    border-radius: 10px
+
+    &__block
+        display: flex
+        position: relative
+        flex-direction: column
+        padding-top: 10px
+        margin: 15px
+
+    &__input
+        border: 0
+        border-bottom: 1.5px solid #ccc
+        font: inherit
+        background-color: inherit
+        width: 100%
+        font-size: 16px
+        line-height: 30px
+        padding-left: 10px
+        &:focus, &:valid
+            outline: 0
+            border-bottom-color: #ccc
+        &::placeholder
+            color: #ccc
+            font-size: 14px
+    .text
+        height: auto
+
+    .date
+        color: #ccc
+        padding-left: 10px
+
+    &__label
+        font-size: 14px
+        font-style: italic
+        padding-left: 10px
+
+    &__button
+        border-radius: 4px
+        border: none
+        outline: none
+        padding: 10px 15px
+        font-size: 16px
+        width: 100%
+        color: #fff
+        background: linear-gradient(#00eeff, #506aff)
+        box-shadow: 0 2px 12px -3px #506aff
+        &:hover
+            opacity: 1
+            box-shadow: 0 2px 2px -3px #506aff
+
+.mistake-text, .mistake-name
+    font-size: 12px
+    color: red
+    padding: 3px
+
+.comment-block
+    display: flex
+    justify-content: center
+    flex-direction: column
+    margin-top: 20px
+
+    &__text
+        border: 1px solid #ccc
+        border-radius: 10px
+        padding: 15px
+
+    &__header
+        display: flex
+        justify-content: space-between
+        margin: 15px 0 5px 0
+        padding: 0 15px
+
+    &__footer
+        display: flex
+        justify-content: space-between
+        margin: 15px 0
+        padding: 0 15px

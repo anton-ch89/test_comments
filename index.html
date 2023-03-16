@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./SASS/reset.css">
+    <link rel="stylesheet" href="./SASS/normailize.css">
+    <link rel="stylesheet" href="./SASS/style.css">
+    <script src="./dist/bundle.js" type="module" defer></script>
+
+
+    <title>Article</title>
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <h2 class="main__header">New article</h2>
+        </header>
+        <div class="main__text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sapiente numquam laborum earum impedit
+                consequatur cum, quas praesentium doloribus sequi voluptatibus ipsum sed quod aperiam sunt distinctio!
+                Aliquid numquam libero velit. Saepe, voluptatum fuga doloremque dolores delectus soluta asperiores eos
+                dicta illo voluptate obcaecati, veniam nulla maxime repellat recusandae. Saepe doloribus debitis ad
+                ducimus laboriosam ut et quas illum voluptatem exercitationem distinctio, dicta atque a neque voluptate
+                rerum nam natus dolores cum labore iusto. Aspernatur earum nulla necessitatibus fugit voluptates cum
+                repellat neque illo quo accusantium, quam ducimus adipisci odio mollitia quod nobis magnam numquam atque
+                reprehenderit labore corrupti molestias. Incidunt quaerat ducimus aperiam praesentium esse, beatae modi
+                quod aliquid omnis a, nesciunt nam distinctio! Accusamus excepturi laudantium consequatur explicabo eum
+                temporibus est aut saepe dolore? Ab corrupti earum cupiditate excepturi accusamus sunt aliquid
+                perferendis accusantium nemo aperiam illum non eligendi eius omnis soluta voluptatem nostrum quis,
+                officiis quam. Provident.
+            </p>
+        </div>
+    </section>
+    <section class="comments-field">
+        <div class="container">
+            <div class="comments">
+                <h3 class="comments__header">Комментарии:</h3>
+                <div id="comment-area" class="comments__area">
+
+                </div>
+            </div>
+
+            <form id="form" class="form">
+                <div class="form__container">
+                    <div class="form__block">
+                        <label class="form__label" for="comment-name">Имя:</label>
+                        <input class="form__input name" type="name" placeholder="Ваше имя" id="comment-name">
+                        <div class='mistake-name' hidden>
+                            <p><em>Поле не может быть пустым</em></p>
+                            <p><em>Длина имени не более 15 символов</em></p>
+                        </div>
+                    </div>
+                    <div class="form__block">
+                        <label class="form__label" for="comment-text">Комментарий:</label>
+                        <textarea rows="5" cols="50" class="form__input text" name="text" id="comment-text" cols="30"
+                            rows="10" placeholder="Ваш комментарий"></textarea>
+                        <div class='mistake-text' hidden>
+                            <p><em>Поле не может быть пустым</em></p>
+                            <p><em>Длина комментария не более 300 символов</em></p>
+                        </div>
+                    </div>
+                    <div class="form__block">
+                        <label class="form__label" for="comment-text">Дата:</label>
+
+                        <input class="form__input date" type="date" id="comment-date">
+                    </div>
+                    <div class="form__block">
+                        <button class="form__button" type="submit" id="comment-add">Отправить комментарий</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
